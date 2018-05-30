@@ -1,0 +1,104 @@
+
+    textarea.input-field{
+    width: 100%;
+    box-sizing:border-box;
+    }
+    span{
+    display: block;
+    overflow: hidden;
+    }
+    div.frm{
+    background-color: white;
+    }
+    div.frm:hover{
+    background-color: #a9c9fc;
+    }
+    a.doc
+    {
+        color: white;
+    }
+    a.doc:hover
+    {
+        color: red;
+    }
+    a.con
+    {
+        color: white;
+    }
+    a.con:hover
+    {
+        color: #27AE60;
+    }
+    .button {
+    background-color: #1F618D;
+    border: none;
+    color: Black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 1px 1px;
+    cursor: pointer;
+}
+    .bg {
+    background-image: url('./img/whitehouse.jpg');
+}
+.bg2 {
+    background-image: url('./img/space.jpg');
+}
+    div.box {
+width: 100%;
+}
+     .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #00ccff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0066cc;
+}
+
+div.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+    p.padding {
+    padding-left: 0.4cm;
+    }
+    p.padding2 {
+    padding-left: 4cm;
+    }
+    legend.pad {
+    padding-left: 0.4cm;
+    }
