@@ -1,6 +1,10 @@
-<?php include 'database.php'; ?>
-
 <?php
+$connect=mysqli_connect("localhost","lcnitd2","password","nitmun");
+ 
+if(mysqli_connect_errno($connect))
+{
+		echo 'Failed to connect';
+}
 $name=$_POST['name1'];
 $college=$_POST['institute1'];
 $city=$_POST['city1'];
@@ -28,7 +32,7 @@ else
 				
 	if(mysqli_affected_rows($connect) > 0){
 	echo "<p>Participant Added</p>";
-	echo "<a href='home.html'>Go Back</a>";
+	echo "<a href='index.html'>Go Back</a>";
 } else {
 	echo "Participant NOT Added<br />";
 	echo mysqli_error ($connect);

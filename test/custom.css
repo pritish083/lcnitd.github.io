@@ -1,69 +1,23 @@
-
-    textarea.input-field{
+.footer .copyright-section
+     {
+        font-size:20px;
+     }
+     .sfooter
+     {
+        text-align: center;
+        font-size: 20px;
+     }
+     input[type=text], select {
     width: 100%;
-    box-sizing:border-box;
-    }
-    span{
-    display: block;
-    overflow: hidden;
-    }
-    div.frm{
-    background-color: white;
-    }
-    div.frm:hover{
-    background-color: #a9c9fc;
-    }
-    a.doc
-    {
-        color: white;
-    }
-    a.doc:hover
-    {
-        color: red;
-    }
-    a.con
-    {
-        color: white;
-    }
-    a.con:hover
-    {
-        color: #27AE60;
-    }
-    .button {
-    background-color: #1F618D;
-    border: none;
-    color: Black;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
+    padding: 12px 20px;
+    margin: 8px 0;
     display: inline-block;
-    font-size: 12px;
-    margin: 1px 1px;
-    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-    .bg {
-    background-image: url('./img/whitehouse.jpg');
-}
-.bg2 {
-    background-image: url('./img/space.jpg');
-}
-    div.box {
-width: 100%;
-}
-     .google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
-    }
-    .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
-    input[type=text], select {
+textarea
+{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -75,7 +29,7 @@ width: 100%;
 
 input[type=submit] {
     width: 100%;
-    background-color: #00ccff;
+    background-color: #00c8aa;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -87,18 +41,21 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #0066cc;
 }
-
-div.form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+.jumbotron p
+{
+    font-weight: 500;
 }
-    p.padding {
-    padding-left: 0.4cm;
-    }
-    p.padding2 {
-    padding-left: 4cm;
-    }
-    legend.pad {
-    padding-left: 0.4cm;
-    }
+.del
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.pricing-section .pricing-head .price {
+    display: block;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 600;
+    padding: 43px 0 0;
+    padding-bottom: 50px;
+    padding-top: 60px;
+}

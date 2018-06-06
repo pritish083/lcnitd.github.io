@@ -157,8 +157,8 @@ ul {
 .btn-primary:focus,
 .btn-primary:active:focus {
     background   : transparent;
-    color        : #fd367e;
-    border-color : #fd367e;
+    color        : #00c8aa;
+    border-color : #00c8aa;
     }
 
 /*btn-default*/
@@ -172,8 +172,8 @@ ul {
 .btn-default:focus,
 .btn-default:active:focus {
     background-color : transparent;
-    color            : #fd367e;
-    border-color     : #fd367e;
+    color            : #00c8aa;
+    border-color     : #00c8aa;
     }
 
 button:focus,
@@ -279,8 +279,8 @@ button:focus,
     }
 
 .main-menu .nav li a:hover,
-.main-menu .nav li.active a {
-    color      : #fd367e;
+.main-menu .nav li.active  {
+    color      : #00c8aa;
     background : transparent;
     }
 
@@ -413,7 +413,7 @@ button:focus,
  * Section Wrapper
  *---------------------------*/
 .section-wrapper {
-    padding : 100px 0;
+    padding : 100px ;
     }
 
 /*---------------------------
@@ -471,8 +471,15 @@ button:focus,
 
 .team .thumbnail img {
     width : 100%;
+    opacity: 1;
+    -webkit-transition : all 0.8s ease 0s;
+    -moz-transition    : all 0.8s ease 0s;
+    -o-transition      : all 0.8s ease 0s;
+    transition         : all 0.8s ease 0s;
     }
-
+.team .thumbnail:hover img {
+    opacity: 0.5;
+    }
 .team .thumbnail .caption {
     padding          : 10px;
     }
@@ -513,7 +520,8 @@ button:focus,
     }
 
 .team .social-links li a:hover {
-    color : #333;
+    color : white;
+    font-size: 18px;
     }
 
 /* --------------------------

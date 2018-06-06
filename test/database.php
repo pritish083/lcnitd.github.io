@@ -1,5 +1,5 @@
 <?php
-$connect=mysqli_connect("mysql.hostinger.in","u996359827_lc","Sa74$#151","u996359827_nitmu");
+$connect=mysqli_connect(159.65.151.130,"lcnitd2","password","nitmun");
  
 if(mysqli_connect_errno($connect))
 {
