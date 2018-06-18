@@ -43,7 +43,7 @@ body {
     color       : #353e55;
     font-weight : 100;
     background  : #ffffff;
-    border      : 10px solid #fff;
+    /*border      : 10px solid #fff;*/
     }
 
 /* --------------------------------------
@@ -94,7 +94,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #fd367e;
+    color              : #00c8aa;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -113,7 +113,7 @@ a:active {
 a:hover,
 a:focus {
     text-decoration : none;
-    color           : #999999;
+    color           : #fff;
     }
 
 p {
@@ -157,8 +157,8 @@ ul {
 .btn-primary:focus,
 .btn-primary:active:focus {
     background   : transparent;
-    color        : #00c8aa;
-    border-color : #00c8aa;
+    color        : #fd367e;
+    border-color : #fd367e;
     }
 
 /*btn-default*/
@@ -172,8 +172,8 @@ ul {
 .btn-default:focus,
 .btn-default:active:focus {
     background-color : transparent;
-    color            : #00c8aa;
-    border-color     : #00c8aa;
+    color            : #fd367e;
+    border-color     : #fd367e;
     }
 
 button:focus,
@@ -279,8 +279,8 @@ button:focus,
     }
 
 .main-menu .nav li a:hover,
-.main-menu .nav li.active  {
-    color      : #00c8aa;
+.main-menu .nav li.active a {
+    color      : #fd367e;
     background : transparent;
     }
 
@@ -346,7 +346,7 @@ button:focus,
  *-------------------*/
 
 .jumbotron {
-    background            : url("../img/img-jumbotron-bg.jpg");
+    background            : url("../img/bg21.jpg");
     background-size       : cover;
     padding               : 0;
     margin                : 0;
@@ -413,7 +413,7 @@ button:focus,
  * Section Wrapper
  *---------------------------*/
 .section-wrapper {
-    padding : 100px ;
+    padding : 100px 0;
     }
 
 /*---------------------------
@@ -560,7 +560,7 @@ button:focus,
  *---------------------------*/
 
 .pricing-section .pricing-table-default {
-    border         : 1px solid #f1f1f1;
+    /*border         : 1px solid #f1f1f1;*/
     background     : #ffffff;
     padding-bottom : 40px;
     }
@@ -628,7 +628,7 @@ button:focus,
     }
 
 /* --------------------------
- * Client Logo 
+ * Client Logo
  *---------------------------*/
 
 .client-logo a img {
@@ -656,7 +656,7 @@ button:focus,
 
 #googleMap {
     height        : 320px;
-    border        : 5px solid #ffffff;
+    border        : 5px solid #00c88a;
     margin-bottom : 100px;
     }
 

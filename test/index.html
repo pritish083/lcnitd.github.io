@@ -7,27 +7,38 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>NITMUN'18</title>
     <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <style type="text/css">
-    	.w3-animate-bottom
-    	{
-    		animation: animatebottom 2s;
-    	}
-    	.disp
-    	{
-    		display: none;
-    	}
-    	.aleft
-    	{
-    		text-align: left;
-    	}
-    	.acenter
-    	{
-    		text-align: center;
-    	}
-    	#register
-    	{
-    		text-transform: uppercase;
-    	}
+      .w3-animate-bottom
+      {
+        animation: animatebottom 2s;
+      }
+      .disp
+      {
+        display: none;
+      }
+      .aleft
+      {
+        text-align: left;
+      }
+      .acenter
+      {
+        text-align: center;
+      }
+      #register
+      {
+        text-transform: uppercase;
+      }
+      .cform label
+      {
+      	font-size: 13px;
+      	padding-left: 4%;
+      }
+      #register h1
+      {
+      	font-size: 25px;
+      }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- favicon -->
@@ -42,13 +53,13 @@
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- jquery -->
-	<script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
 
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
 
-	<!-- Plugin JavaScript -->
-	<script src="js/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -68,19 +79,19 @@
         }
         else
         {
-         var letters = /^[A-Za-z ]+$/;  
-         if(!x.match(letters))  
-         {  
-          alert('Name must contain letters only.');  
-          return false;  
-         }  
+         var letters = /^[A-Za-z ]+$/;
+         if(!x.match(letters))
+         {
+          alert('Name must contain letters only.');
+          return false;
+         }
          if(x.length<=2)
          {
           alert("Name should contain atleast 3 letters.");
           return false;
          }
         }
-       
+
      var x=document.forms["signup"]["institute1"].value
        if (x==null || x=="")
        {
@@ -89,12 +100,12 @@
        }
        else
        {
-         var letters = /^[A-Za-z ]+$/;  
-         if(!x.match(letters))  
-         {  
-          alert('College must contain letters only.');  
-          return false;  
-         }  
+         var letters = /^[A-Za-z ]+$/;
+         if(!x.match(letters))
+         {
+          alert('College must contain letters only.');
+          return false;
+         }
          if(x.length<=2)
          {
           alert("College must contain atleast 3 letters.");
@@ -109,19 +120,19 @@
        }
        else
        {
-        var letters = /^[A-Za-z ]+$/;  
-        if(!x.match(letters))  
-        {  
-         alert('City must contain letters only.');  
-         return false;  
-        }  
+        var letters = /^[A-Za-z ]+$/;
+        if(!x.match(letters))
+        {
+         alert('City must contain letters only.');
+         return false;
+        }
         if(x.length<=2)
         {
           alert("City must contain atleast 3 letters.");
           return false;
         }
        }
-     
+
        var x=document.forms["signup"]["contact1"].value
        if (x==null || x=="" || x.length!=10)
        {
@@ -137,7 +148,7 @@
     return false;
      }
      }
-     
+
        var x=document.forms["signup"]["email1"].value
        var atpos=x.indexOf("@");
        var dotpos=x.lastIndexOf(".");
@@ -154,12 +165,12 @@
        }
      var y=document.forms["signup"]["councilpref1"].value
      alert(y);
-       
-       
+
+
    }
    function validateip()
    {
-   
+
         var x=document.forms["ip"]["name2"].value
         if (x==null || x=="")
         {
@@ -168,19 +179,19 @@
         }
         else
         {
-         var letters = /^[A-Za-z ]+$/;  
-         if(!x.match(letters))  
-         {  
-          alert('Name must contain letters only.');  
-          return false;  
-         }  
+         var letters = /^[A-Za-z ]+$/;
+         if(!x.match(letters))
+         {
+          alert('Name must contain letters only.');
+          return false;
+         }
          if(x.length<=2)
          {
           alert("First name should contain atleast 3 letters.");
           return false;
          }
         }
-       
+
      var x=document.forms["ip"]["institute2"].value
        if (x==null || x=="")
        {
@@ -189,12 +200,12 @@
        }
        else
        {
-         var letters = /^[A-Za-z ]+$/;  
-         if(!x.match(letters))  
-         {  
-          alert('College must contain letters only.');  
-          return false;  
-         }  
+         var letters = /^[A-Za-z ]+$/;
+         if(!x.match(letters))
+         {
+          alert('College must contain letters only.');
+          return false;
+         }
          if(x.length<=2)
          {
           alert("College must contain atleast 3 letters.");
@@ -209,19 +220,19 @@
        }
        else
        {
-        var letters = /^[A-Za-z ]+$/;  
-        if(!x.match(letters))  
-        {  
-         alert('City must contain letters only.');  
-         return false;  
-        }  
+        var letters = /^[A-Za-z ]+$/;
+        if(!x.match(letters))
+        {
+         alert('City must contain letters only.');
+         return false;
+        }
         if(x.length<=2)
         {
           alert("City must contain atleast 3 letters.");
           return false;
         }
        }
-     
+
        var x=document.forms["ip"]["contact2"].value
        if (x==null || x=="" || x.length!=10)
        {
@@ -237,7 +248,7 @@
     return false;
      }
      }
-     
+
        var x=document.forms["ip"]["email2"].value
        var atpos=x.indexOf("@");
        var dotpos=x.lastIndexOf(".");
@@ -255,38 +266,78 @@
    }
     </script>
     <script type="text/javascript">
-    	function swap()
-		{
-			var c1=document.forms["signup"]["councilpref1"].value;
-			if(c1==="UGASS")
-			{
-				document.getElementById("a1").innerText="Country Preference #1";
-				document.getElementById("a2").innerText="Country Preference #2";
-				document.getElementById("a3").innerText="Country Preference #3";
-			}
-			else
-			{
-				document.getElementById("a1").innerText="Portfolio Preference #1";
-				document.getElementById("a2").innerText="Portfolio Preference #2";
-				document.getElementById("a3").innerText="Portfolio Preference #3";	
-			}
-		}
-		function swap2()
-		{
-			var c2=document.forms["signup"]["councilpref2"].value;
-			if(c2==="UGASS")
-			{
-				document.getElementById("aa1").innerText="Country Preference #1";
-				document.getElementById("aa2").innerText="Country Preference #2";
-				document.getElementById("aa3").innerText="Country Preference #3";
-			}
-			else
-			{
-				document.getElementById("aa1").innerText="Portfolio Preference #1";
-				document.getElementById("aa2").innerText="Portfolio Preference #2";
-				document.getElementById("aa3").innerText="Portfolio Preference #3";	
-			}
-		}
+      function swap()
+    {
+      var c1=document.forms["signup"]["councilpref1"].value;
+      if(c1==="UGASS")
+      {
+        document.getElementById("a1").innerText="Country Preference #1";
+        document.getElementById("a2").innerText="Country Preference #2";
+        document.getElementById("a3").innerText="Country Preference #3";
+      }
+      else
+      {
+        document.getElementById("a1").innerText="Portfolio Preference #1";
+        document.getElementById("a2").innerText="Portfolio Preference #2";
+        document.getElementById("a3").innerText="Portfolio Preference #3";
+      }
+    }
+    function swap2()
+    {
+      var c2=document.forms["signup"]["councilpref2"].value;
+      if(c2==="UGASS")
+      {
+        document.getElementById("aa1").innerText="Country Preference #1";
+        document.getElementById("aa2").innerText="Country Preference #2";
+        document.getElementById("aa3").innerText="Country Preference #3";
+      }
+      else
+      {
+        document.getElementById("aa1").innerText="Portfolio Preference #1";
+        document.getElementById("aa2").innerText="Portfolio Preference #2";
+        document.getElementById("aa3").innerText="Portfolio Preference #3";
+      }
+    }
+    function prswap()
+    {
+      var c1=document.forms["ip"]["prcouncilpref1"].value;
+      if(c1==="UGASS")
+        {
+          document.getElementById("ag1").innerHTML=
+          "<label>Agency Choice Preference</label><select class='input-field' name='agencypref1'  class=\"form-control\"><option value='aljazeera' selected='selected'>Al Jazeera</option><option value='bbc' >BBC</option><option value='reuters' >Reuters</option></select>"
+        }
+      else
+        {
+        document.getElementById("ag1").innerHTML=
+        "<label>Agency Choice Preference</label><select class='input-field' name='agencypref1'  class=\"form-control\"><option value='API' selected='selected'>Associated Press of India</option><option value='telegraph'>The Daily Telegraph</option><option value='hindu'>The Hindu</option></select>"
+        }
+    }
+    function prswap2()
+    {
+      var c2=document.forms["ip"]["prcouncilpref2"].value;
+      if(c2==="UGASS")
+        {
+          document.getElementById("ag2").innerHTML=
+          "<label>Agency Choice Preference</label><select class='input-field' name='agencypref2'  class=\"form-control\"><option value='aljazeera' selected='selected'>Al Jazeera</option><option value='bbc' >BBC</option><option value='reuters' >Reuters</option></select>"
+        }
+      else
+        {
+        document.getElementById("ag2").innerHTML=
+        "<label>Agency Choice Preference</label><select class='input-field' name='agencypref2'  class=\"form-control\"><option value='API' selected='selected'>Associated Press of India</option><option value='telegraph'>The Daily Telegraph</option><option value='hindu'>The Hindu</option></select>"
+        }
+    }
+    function favchange()
+    {
+      var k=document.querySelector("li");
+      if($(k).hasClass('active'))
+      {
+        $("#logo").attr("src","img/logo6.png");
+      }
+      else
+      {
+        $("#logo").attr("src","img/logo7.png");
+      }
+    }
     </script>
  <!-- <style type="text/css" src="custom.css"></style> -->
  <link rel="stylesheet" type="text/css" href="custom.css">
@@ -294,7 +345,7 @@
  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar" >
+<body id="page-top" data-spy="scroll" data-target=".navbar" onscroll="favchange()">
 <div id="main-wrapper">
     <!-- Page Preloader -->
     <div id="preloader">
@@ -314,7 +365,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo33A.png" alt=""></a>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo6.png" alt="" id="logo"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -322,7 +373,7 @@
                     <ul class="nav navbar-nav">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <li class="hidden"><a href="#page-top"></a></li>
-                        <li><a class="page-scroll" href="#home">Home</a></li>
+                        <li><a class="page-scroll" href="#home">About NITMUN</a></li>
                         <li><a href="#secretariat">Secretariat</a></li>
                         <li><a href="#committees">Committees</a></li>
                         <li><a href="#register">Register</a></li>
@@ -340,27 +391,27 @@
 
     </header>
 
-    <div id="home" class="jumbotron text-center">
-        	<div class="content">
+    <div class="jumbotron text-center">
+          <div class="content">
             <div class="event-date">Dates</div>
             <h1>NITMUN '18</h1>
             <div class="w3-animate-bottom">
             <p class="lead" id="animate"></p>
             <a class="page-scroll" href="#register"><button type="button" class="btn btn-default btn-lg">Register</button></a>
-            </div> 
+            </div>
         </div>
     </div>
     <!-- .Jumbotron-->
 
 
-    <section class="section-wrapper about-event">
+    <section id="home" class="section-wrapper about-event" id="intro" style="color:#fff;background-color: #323a45;" data-aos="fade-up">
         <div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="col-md-8">
-                    <p class="lead">
+                    <p class="lead" data-aos="fade-up">
                         "Work maketh a man" - the motto of the college National Institute of Technology, Durgapur speaks what it stands for. A public engineering college deemed as an Institute of National Importance by the Indian Government, it strives to be among the top NITs in the country.
                     </p>
-                    <p class="lead">
+                    <p class="lead" data-aos="fade-up">
                         In MUN, students step into the shoes of ambassadors from U.N. member states to debate current issues on the organization's vast agenda. Student "delegates" in MUN prepare draft resolutions, plot strategy, negotiate with supporters and adversaries and resolve conflicts.
                     </p>
                 </div>
@@ -370,7 +421,7 @@
                         <br>
                         <br>
                         <br>
-                        <abbr title="Phone"></abbr> 
+                        <abbr title="Phone"></abbr>
                     </address>
                 </div>
             </div>
@@ -388,7 +439,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
                     <figure class="thumbnail">
                         <a href=""><img src="img/kashyap.jpg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
@@ -396,16 +447,16 @@
                                 <small>Secretary General</small>
                             </h3>
                             <ul class="social-links">
-                                <li><a href="https://www.facebook.com/kashyap.mattoo"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="tel:+919088946573"><i class="fa fa-phone"></i></a></li>
-                                <li><a href="mailto:mattookashyap@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="https://www.facebook.com/kashyap.mattoo" title="Kashyap Mattoo"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="tel:+919088946573" title="+919088946573"><i class="fa fa-phone"></i></a></li>
+                                <li><a href="mailto:mattookashyap@gmail.com" title="mattookashyap@gmail.com"><i class="fa fa-envelope"></i></a></li>
                             </ul>
                         </figcaption>
                     </figure>
                 </div>
                 <!-- /.col-sm-6 -->
 
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
                     <figure class="thumbnail">
                         <a href=""><img src="img/rahul.jpg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
@@ -413,16 +464,16 @@
                                 <small>Under Secretary General</small>
                             </h3>
                             <ul class="social-links">
-                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="tel:+919163321234"><i class="fa fa-phone"></i></a></li>
-                                <li><a href="mailto:rahulghosh9869@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=1419376559" title="Rahul Ghosh"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="tel:+919163321234" title="+919163321234"><i class="fa fa-phone"></i></a></li>
+                                <li><a href="mailto:rahulghosh9869@gmail.com" title="rahulghosh9869@gmail.com"><i class="fa fa-envelope"></i></a></li>
                             </ul>
                         </figcaption>
                     </figure>
                 </div>
                 <!-- /.col-sm-6 -->
 
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
                     <figure class="thumbnail">
                         <a href=""><img src="img/shivam.jpg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
@@ -430,26 +481,26 @@
                                 <small>Under Secretary General</small>
                             </h3>
                             <ul class="social-links">
-                                <li><a href="https://www.facebook.com/profile.php?id=100006888462062"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="tel:+919093244444"><i class="fa fa-phone"></i></a></li>
-                                <li><a href="mailto:"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100006888462062" title="Shivam Singhal"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="tel:+919093244444" title="+919093244444"><i class="fa fa-phone"></i></a></li>
+                                <li><a href="mailto:shivamsinghal0610@gmail.com" title="shivamsinghal0610@gmail.com"><i class="fa fa-envelope"></i></a></li>
                             </ul>
                         </figcaption>
                     </figure>
                 </div>
                 <!-- /.col-sm-6 -->
 
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
                     <figure class="thumbnail">
-                        <a href=""><img src="img/shreyashee2.jpg" class="img-responsive" alt="Image"></a>
+                        <a href=""><img src="img/shreyashee.jpg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
                             <h3>Shreyashee Sinha
                                 <small>International Press Head</small>
                             </h3>
                             <ul class="social-links">
-                                <li><a href="https://www.facebook.com/sinha23"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="tel:+917063141513"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="mailto:shreyashee.sinha@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="https://www.facebook.com/sinha23" title="Shreyashee Sinha"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="tel:+917063141513" title="+917063141513"><i class="fa fa-phone"></i></a></li>
+                                <li><a href="mailto:shreyashee.sinha@gmail.com" title="shreyashee.sinha@gmail.com"><i class="fa fa-envelope"></i></a></li>
                             </ul>
                         </figcaption>
                     </figure>
@@ -474,10 +525,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6" >
+                <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up">
                     <div class="pricing-table-default text-center">
                         <div class="pricing-head">
-                            <h3 id="ncol">UN General Assembly Special Session-The Arctic Conflict</h3>
+                            <h3>UN General Assembly Special Session-2025</h3>
                             <span class="price"><sup></sup>Solving the Arctic Crisis
  (Rapid Militarization and Economic Tensions)</span>
                         </div>
@@ -487,12 +538,12 @@
                 </div>
                 <!-- .col-sm-4 -->
 
-                
 
-                <div class="col-sm-12 col-lg-6 col-md-6 ">
+
+                <div class="col-sm-12 col-lg-6 col-md-6" data-aos="fade-up">
                     <div class="pricing-table-default text-center">
                         <div class="pricing-head">
-                            <h3 id="ncol" style="padding-top: 19px; padding-bottom:31px;">The 1947 Round Table Conference</h3>
+                            <h3 style="padding-top: 19px; padding-bottom:31px;">The 1947 Round Table Conference</h3>
                             <span class="price"><sup></sup>Peaceful Separation of States under Dominion of India
 (Transfer of Power and Partition of State)</span>
                         </div>
@@ -510,7 +561,7 @@
 
     <section id="register" class="single-page scrollblock gray-bg del">
         <div class="container" data-aos="fade-up">
-            <span id="delhead"><h1 style="padding-top: 20px;" class="aleft"><i class="fa fa-caret-right" id="drop"></i><font face="helvetica">Register as a Delegate</font></h1></span>
+            <span id="delhead" style="cursor: pointer;"><h1 style="padding-top: 20px;font-family: Montserrat;" class="aleft"><i class="fa fa-caret-right" id="drop"></i>Register as a Delegate</h1></span>
             <div class="row disp" id="del" data-aos="fade-up">
                     <div class="span12">
                         <div class="cform" id="theme-form">
@@ -539,7 +590,7 @@
                                     <input type="email" name="email1"  class="form-control" placeholder='example@xyz.com' class='input-field' required>
                                 </div>
                             </div>
-              <br>
+
                             <legend class="pad">Council Choice 1st Preference</legend>
                             <div class="row">
                                 <div class="form-group col-lg-3">
@@ -562,10 +613,9 @@
                                     <input type='text' name="country3" placeholder='Preference #3' class='input-field'  class="form-control" required/>
                                 </div>
                             </div>
-                            <br>
                             <legend class="pad" >Council Choice 2nd Preference</legend>
                             <div class="row">
-                                <div class="form-group col-lg-3"> 
+                                <div class="form-group col-lg-3">
                                     <label >Council Choice 2nd Preference</label>
                                         <select class='input-field' name='councilpref2'  class="form-control" onchange="swap2()">
                                             <option value="UGASS" selected='selected'>UN GENERAL ASSEMBLY SPECIAL SESSION-THE ARCTIC CONFLICT</option>
@@ -594,7 +644,7 @@
                             <div class="row">
                                 <div class="form-group col-lg-12">
                                     <input type="hidden" name="save" value="contact">
-                                    <input type="submit" name="submit" value="submit">
+                                    <input type="submit" name="submit" value="SUBMIT">
                                 </div>
                             </div>
                         </form>
@@ -604,8 +654,8 @@
           <!-- ./span12 -->
         </div>
         <div class="container" data-aos="fade-up">
-        	<legend class="pad"></legend>
-            <span id="presshead"><h1  style="padding-top:20px;" class="aleft"><i class="fa fa-caret-right" id="dropa"></i><font face="helvetica">Register as a member of International Press</font></h1></span>
+          <legend class="pad"></legend>
+        <span id="presshead" style="cursor: pointer;"><h1  style="padding-top:20px;font-family: Montserrat;" class="aleft"><i class="fa fa-caret-right" id="dropa"></i>Register as a member of International Press</h1></span>
             <div class="row disp" id="press">
                 <div class="span12">
                     <div class="cform" id="theme-form">
@@ -624,39 +674,61 @@
                                 <input type="text" name="city2" class="form-control" placeholder='City' required>
                             </div>
                         </div>
-                        <div class="row">   
+                        <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>Contact Number</label>
                                 <input type="tel" name="contact2" class="form-control" placeholder='90000000000' required>
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>Email Address</label>
-                                <input type="email1" name="email2" class="form-control" placeholder='example@xyz.com' class='input-field' required>
+                                <input type="email" name="email2" class="form-control" placeholder='example@xyz.com' class='input-field' required>
                             </div>
                         </div>
-                        <legend class="pad">Role and Agency Choice Preference</legend>
+                        <legend class="pad">Role and Agency Choice Preference #1</legend>
                         <div class="row">
-                        	<div class="form-group col-lg-4">
+                          <div class="form-group col-lg-4">
+                          <label >Council Choice 1st Preference</label>
+                          <select class='input-field' name="prcouncilpref1"  class="form-control" id="prcouncilpref1" onchange="prswap()">
+                                            <option value="UGASS" selected='selected'>UN GENERAL ASSEMBLY SPECIAL SESSION-THE ARCTIC CONFLICT</option>
+                                            <option value="RTC">THE 1947 ROUND TABLE CONFERENCE</option>
+                                    </select></div>
+                          <div class="form-group col-lg-4">
                                 <label >Role Preference</label>
                                 <select class='input-field' name='agencyrolepref1'  class="form-control">
                                     <option value='photographer' selected='selected'>Photographer</option>
                                     <option value='journalist' >Journalist</option>
                                 </select>
                             </div>
-                            <div class="form-group col-lg-4">
-                                <label >Agency Choice 1st Preference</label>
+                            <div class="form-group col-lg-4" id="ag1">
+                                <label >Agency Choice Preference</label>
                                 <select class='input-field' name='agencypref1'  class="form-control">
                                     <option value='aljazeera' selected='selected'>Al Jazeera</option>
                                     <option value='bbc' >BBC</option>
                                     <option value='reuters' >Reuters</option>
                                 </select>
                             </div>
-                            <div class="form-group col-lg-4">
-                                <label >Agency Choice 2nd Preference</label>
+                        </div>
+                        <legend class="pad">Role and Agency Choice Preference #2</legend>
+                        <div class="row">
+                          <div class="form-group col-lg-4">
+                          <label >Council Choice 2nd Preference</label>
+                          <select class='input-field' name="prcouncilpref2"  class="form-control" id="prcouncilpref2" onchange="prswap2()">
+                                            <option value="UGASS" selected='selected'>UN GENERAL ASSEMBLY SPECIAL SESSION-THE ARCTIC CONFLICT</option>
+                                            <option value="RTC">THE 1947 ROUND TABLE CONFERENCE</option>
+                                    </select></div>
+                          <div class="form-group col-lg-4">
+                                <label >Role Preference</label>
+                                <select class='input-field' name='agencyrolepref2'  class="form-control">
+                                    <option value='photographer' selected='selected'>Photographer</option>
+                                    <option value='journalist' >Journalist</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-4" id="ag2">
+                                <label >Agency Choice Preference</label>
                                 <select class='input-field' name='agencypref2'  class="form-control">
                                     <option value='aljazeera' selected='selected'>Al Jazeera</option>
                                     <option value='bbc' >BBC</option>
-                                        <option value='reuters' >Reuters</option>
+                                    <option value='reuters' >Reuters</option>
                                 </select>
                             </div>
                         </div>
@@ -664,12 +736,12 @@
                         <div class="row">
                             <div class="form-group col-lg-12">
                                 <span><textarea type="text" name="munex" placeholder="Something about your past MUNs" class="input-field" class="form-control" rows="6"></textarea></span>
-                            </div>                         
+                            </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
-                                <input type="submit" name="submit" value="submit">
+                                <input type="submit" name="submit" value="SUBMIT">
                             </div>
                         </div>
                     </form>
@@ -693,28 +765,28 @@
             </di25
 
          25 <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <div class="session">
                         <time>8:30AM</time>
                         <h2>Doors Open</h2>
                     </div>
                     <!-- .session -->
 
-                    <div class="session">
+                    <div class="session" data-aos="fade-up">
                         <time>9:30 - 9:40AM</time>
                         <h2>Opening Remarks</h2>
                         <h3> <span></span></h3>
                     </div>
                     <!-- .session -->
 
-                    <div class="session">
+                    <div class="session" data-aos="fade-up">
                         <time>9:50 - 10:05AM</time>
                         <h2>TBD</h2>
                         <h3> <span></span></h3>
                     </div>
                     <!-- .session -->
 
-                    <div class="session">
+                    <div class="session" data-aos="fade-up">
                         <time>10:10 - 10:35AM</time>
                         <h2>TBD</h2>
                         <h3> <span></span></h3>
@@ -724,7 +796,7 @@
 
                 </div>
                 <div class="col-md-4">
-                    <div class="session">
+                    <div class="session" data-aos="fade-up">
                         <time>11:15 - 1:35PM</time>
                         <h2>TBD</h2>
                         <h3> <span></span></h3>
@@ -740,7 +812,7 @@
                     </div>
                     <!-- .session -->
 
-                    <div class="session">
+                    <div class="session" data-aos="fade-up">
                         <time>2:20 - 3:20PM</time>
                         <h2>Lunch Break</h2>
                     </div>
@@ -749,14 +821,14 @@
 
                 </div>
                 <div class="col-md-4">
-                    <div class="session">
+                    <div class="session" data-aos="fade-up">
                         <time>3:20PM - 4PM</time>
                         <h2>TBD</h2>
                         <h3> <span></span></h3>
                     </div>
                     <!-- .session -->
 
-                    <div class="session">
+                    <div class="session" data-aos="fade-up">
                         <time>4:05 - 5:30PM</time>
                         <h2>TBD</h2>
                         <h3> <span></span></h3>
@@ -766,7 +838,7 @@
                     <!-- .session -->
 
 
-                    <div class="session">
+                    <div class="session" data-aos="fade-up">
                         <time>5:30 - 6:00PM</time>
                         <h2>TBD</h2>
                     </div>
@@ -789,23 +861,23 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-1.jpg" alt="Image"></a>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin" data-aos="fade-up">
+                    <a href="#"><img src="img/logo61 (1).jpg" alt="Image"></a>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-2.jpg" alt="Image"></a>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin" data-aos="fade-up">
+                    <a href="#"><img src="img/logo61 (2).jpg" alt="Image"></a>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-3.jpg" alt="Image"></a>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin" data-aos="fade-up">
+                    <a href="#"><img src="img/logo61 (3).jpg" alt="Image"></a>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-4.jpg" alt="Image"></a>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin" data-aos="fade-up">
+                    <a href="#"><img src="img/logo331.jpg" alt="Image"></a>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-5.jpg" alt="Image"></a>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin" data-aos="fade-up">
+                    <a href="#"><img src="img/logo1.jpg" alt="Image"></a>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-6.jpg" alt="Image"></a>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin" data-aos="fade-up">
+                    <a href="#"><img src="img/logo2.jpg" alt="Image"></a>
                 </div>
             </div>
         </div>
@@ -819,9 +891,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>Contact Us</h1>
+                        <h1>CONTACT US</h1>
 
-                        <p>Credibly recaptiualize cutting-edge functionalities vis-a-vis intuitive growth strategies. Appropriately evolve open-source potentialities via goal-oriented e-business. Enthusiastically target go forward scenarios and visionary "outside the box" thinking. Professionally administrate cost effective sources without corporate convergence.</p>
+                        <p>Want to know more?
+                        A little about us. The Literary Circle is the exclusive literary club of the college. 
+                        Our moto is to think out of the box and to think sky high.</p>
+                        <a href="/lc/index.html"><button type="submit" class="btn btn-primary btn-lg" data-aos="fade-up">MEET THE TEAM</button></a>
                     </div>
                 </div>
             </div>
@@ -834,18 +909,18 @@
             </div>
             <!-- .row-->
 
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-md-12">
-                    <div class="section-title">
+                    <div class="section-title" data-aos="fade-up">
                         <h2>STAY INFORMED</h2>
                         <p>Don't miss the event!</p>
                     </div>
                     <form id="contactForm" class="subscribe-form form-inline" action="sendemail.php" method="POST">
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-up">
                             <label for="emailTwo" class="sr-only">Email</label>
                             <input type="email" class="form-control input-lg" required="" id="emailTwo" name="email" placeholder="Enter your email address">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg">SUBSCRIBE</button>
+                        <button type="submit" class="btn btn-primary btn-lg" data-aos="fade-up">SUBSCRIBE</button>
                     </form>
                 </div>
             </div>
@@ -859,10 +934,10 @@
         <div class="copyright-section">
             <div class="container">
                     <div class="sfooter">
-                        <h2 style="color: white;">VISIT US</h2>
+                        <h1 style="font-size: 25px;color: #fff;">VISIT US</h1>
                         <a href="https://www.facebook.com/nitmun.verve"><i class="fa fa-facebook"></i></a>
                         <a href="https://www.instagram.com/lc.nitd"><i class="fa fa-instagram"></i></a>
-                        <a href="mailto:nitmun.verve@gmail.com"><i class="fa fa-envelope"></i></a>                      
+                        <a href="mailto:nitmun.verve@gmail.com"><i class="fa fa-envelope"></i></a>
                     </div>
             </div>
             <!-- .container -->
@@ -880,54 +955,54 @@
 <!-- <script src="js/one-page-nav.js"></script> -->
 <script src="js/scripts.js"></script>
 <!-- <script type="text/javascript">
-	$("li:nth-of-type(3)").click(function(){
+  $("li:nth-of-type(3)").click(function(){
     $("#secretariat").removeClass("w3-animate-bottom");
     setTimeout(function(){
         $("#secretariat").addClass("w3-animate-bottom");
     },50);
-	});
-	$("li:nth-of-type(4)").click(function(){
+  });
+  $("li:nth-of-type(4)").click(function(){
     $("#committees").removeClass("w3-animate-bottom");
     setTimeout(function(){
         $("#committees").addClass("w3-animate-bottom");
     },50);
-	});
-	$("li:nth-of-type(5)").click(function(){
+  });
+  $("li:nth-of-type(5)").click(function(){
     $("#register").removeClass("w3-animate-bottom");
     setTimeout(function(){
         $("#register").addClass("w3-animate-bottom");
     },50);
-	});
-	$("li:nth-of-type(6)").click(function(){
+  });
+  $("li:nth-of-type(6)").click(function(){
     $("#schedule").removeClass("w3-animate-bottom");
     setTimeout(function(){
         $("#schedule").addClass("w3-animate-bottom");
     },50);
-	});
-	$("li:nth-of-type(7)").click(function(){
+  });
+  $("li:nth-of-type(7)").click(function(){
     $("#sponsors").removeClass("w3-animate-opacity");
     setTimeout(function(){
         $("#sponsors").addClass("w3-animate-opacity");
     },50);
-	});
-	$("li:nth-of-type(8)").click(function(){
+  });
+  $("li:nth-of-type(8)").click(function(){
     $("#contact").removeClass("w3-animate-bottom");
     setTimeout(function(){
         $("#contact").addClass("w3-animate-bottom");
     },50);
-	});
+  });
 </script> -->
 <script type="text/javascript" src="custom.js"></script>
 <script type="text/javascript">
    AOS.init();
  </script>
  <script type="text/javascript">
- 	﻿$("#delhead").click(function(){
+  ﻿$("#delhead").click(function(){
     $("#drop").toggleClass("fa fa-caret-right");
     $("#drop").toggleClass("fa fa-caret-down");
     $("#del").toggleClass("disp");
 });
- 	$("#presshead").click(function(){
+  $("#presshead").click(function(){
     $("#dropa").toggleClass("fa fa-caret-right");
     $("#dropa").toggleClass("fa fa-caret-down");
     $("#press").toggleClass("disp");

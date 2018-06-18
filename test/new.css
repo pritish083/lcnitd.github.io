@@ -7,15 +7,12 @@ body{
 
 
 
-#secretariat,#schedule,#committees,#register,#about,#page-top,#contact,#sponsors
+#secretariat,#schedule,#committees,#register,#about,#page-top,#contact,#sponsors,.footer
 {
 	background-color: #323a45;
 	color:#B7B7B9;
 	font-family:Montserrat;
 	
-}
-.section-wrapper, .copyright-section{
-	background-color: #323a45;
 }
 .col-md-12
 {
@@ -24,14 +21,15 @@ body{
 .pad
 {
 	color: white;
+	padding-top: 20px;
+	font-size: 18px;
 }
 
 
 h1
 {
 	color: white;
-	
-font-family:Montserrat;
+	font-family:Montserrat;
 
 }
 h2
@@ -49,10 +47,3 @@ h3
 	background-color: #00c8aa;
 	border-color:#00c8aa;
 }
-#ncol
-{
-	background-color: #00c8aa;
-
-}
-.lead
-{color:#00c8aa;}
