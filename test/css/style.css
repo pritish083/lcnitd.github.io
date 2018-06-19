@@ -346,7 +346,7 @@ button:focus,
  *-------------------*/
 
 .jumbotron {
-    background            : url("../img/bg21.jpg");
+    background            : url("../img/bg3.jpg");
     background-size       : cover;
     padding               : 0;
     margin                : 0;
@@ -358,7 +358,7 @@ button:focus,
     background-repeat     : no-repeat;
     background-position   : center center;
     overflow              : hidden;
-    }
+          }
 
 .jumbotron .content {
     color             : #ffffff;
