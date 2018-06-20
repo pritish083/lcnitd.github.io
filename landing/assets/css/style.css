@@ -337,7 +337,7 @@ a.website:hover {
   top: 0;
   left: 0;
   opacity: 1;
-  background-size: cover;
+  background-size: 100vw 100vh;
   background-repeat: repeat;
   background-position: center center;
   position: relative;
