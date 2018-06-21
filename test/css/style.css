@@ -151,7 +151,8 @@ ul {
 .btn-primary {
     background-color : #fd367e;
     border-color     : #fd367e;
-    }
+     margin: 5px;
+     }
 
 .btn-primary:hover,
 .btn-primary:focus,
