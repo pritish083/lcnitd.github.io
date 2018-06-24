@@ -165,7 +165,7 @@ ul {
 /*btn-default*/
 .btn-default {
     color            : #ffffff;
-    background-color : white;
+    background-color : transparent;
     border-color     : #ffffff;
     }
 
