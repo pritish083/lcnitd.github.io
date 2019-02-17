@@ -2865,7 +2865,7 @@
 */
 .ab-c-m {
 	position: absolute;
-	top: 50%;
+	top: 80%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
   	-moz-transform: translate(-50%, -50%);
@@ -3400,12 +3400,12 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 }
 
 .size4 {
-	width: 150px;
+	width: 250px;
 	height: 60px;
 }
 
 .size5 {
-	width: 157px;
+	width: 250px;
 	height: 60px;
 }
 
