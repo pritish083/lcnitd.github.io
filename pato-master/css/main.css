@@ -145,6 +145,15 @@ a:hover {
 	color: #ec1d25;
 }
 
+#bgimg
+{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(/images/TH2.jpg) no-repeat center center fixed;
+}
+
 /* ------------------------------------ */
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
@@ -1014,7 +1023,7 @@ input[type="date" i] {
 .btn2 {
   background-color: white;
   border-radius: 10px;
-  opacity: 0.9;
+  opacity: 0.2;
 }
 
 .btn2:hover {
