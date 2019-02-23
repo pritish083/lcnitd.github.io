@@ -1680,3 +1680,7 @@ body {padding-right: 0px !important;}
   z-index: 1002;
   overflow: auto;
 }
+
+#prom{
+  border-radius: 5%;
+}
