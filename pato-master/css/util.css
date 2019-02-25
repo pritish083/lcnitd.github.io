@@ -2973,7 +2973,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .tit3 {
 	font-family: Poppins;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 1.8ems;
 	line-height: 1.2;
 	color: #222222;
 	text-transform: uppercase;
@@ -2983,7 +2983,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .tit4 {
 	font-family: Poppins;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 1.8em;
 	line-height: 1.2;
 	color: white;
 	text-transform: uppercase;
@@ -2994,7 +2994,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .tit5 {
 	font-family: Poppins;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 1.8em;
 	line-height: 1.2;
 	color: #222222;
 	text-transform: uppercase;
@@ -3005,7 +3005,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .tit6 {
 	font-family: Poppins;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 1.8em;
 	line-height: 1.2;
 	color: white;
 	text-transform: uppercase;
